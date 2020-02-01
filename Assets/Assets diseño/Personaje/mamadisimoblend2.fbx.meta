@@ -1,18 +1,9 @@
 fileFormatVersion: 2
-guid: 53e11044670db0b42ad9c18f6bbc3fd0
+guid: 2116e2273f534b64283fa13140fc47f1
 ModelImporter:
   serializedVersion: 19300
-  internalIDToNameTable:
-  - first:
-      74: 1989289236423521904
-    second: Default Take
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: CloudMaterial
-    second: {fileID: -2003699360101198595, guid: 53e11044670db0b42ad9c18f6bbc3fd0,
-      type: 3}
+  internalIDToNameTable: []
+  externalObjects: {}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -76,7 +67,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips: []
+  referencedClips:
+  - f5fbcea7d6d55cd47a81959acf9011d9
+  - 120c9b95792aadb419bd24215d8487b3
+  - 3352e7e8d365a9e41a80b99cae0270c0
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
