@@ -1,6 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI; 
+
 
 public class Marcador : MonoBehaviour
 {
@@ -9,23 +12,18 @@ public class Marcador : MonoBehaviour
     public int timerMuerte;
     private int contador;
 
-    public GameObject atlas;
-    public GameObject obstaculo;
+    private Text texto;
 
-    public CapsuleCollider aCC;
-    public CapsuleCollider oCC;
-
+    void Start(){
+        texto= GetComponent<Text>();
+    }
     // Update is called once per frame
     void Update()
     {
         timerMeta--;
         timerMuerte--;
         contador++;
-
-        if(aCC.OnCollisionEnter()){
-            timerMuerte-=10;
-            contador = 0;
-        }
+        hub.
 
         if(contador == 20)
         {
