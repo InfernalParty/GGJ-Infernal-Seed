@@ -247,9 +247,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   girando: 0
-  velocidad: 4
+  velocidad: 5
   Movimiento: {x: 0, y: 0, z: 0}
   colisionador: {fileID: 0}
+  contadorGiro: 0
 --- !u!114 &18962615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -262,77 +263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 668b99c4513944f49aa4e1c6b949f61a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerMeta: 0
-  timerMuerte: 0
---- !u!1001 &96320111
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 7076689707541531672, guid: 4a6fa81eaaa66874f9c39667b02cb88a,
-        type: 3}
-      propertyPath: m_Name
-      value: Suelo01 (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7076689707541531676, guid: 4a6fa81eaaa66874f9c39667b02cb88a,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7076689707541531676, guid: 4a6fa81eaaa66874f9c39667b02cb88a,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 7076689707541531676, guid: 4a6fa81eaaa66874f9c39667b02cb88a,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 41
-      objectReference: {fileID: 0}
-    - target: {fileID: 7076689707541531676, guid: 4a6fa81eaaa66874f9c39667b02cb88a,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7076689707541531676, guid: 4a6fa81eaaa66874f9c39667b02cb88a,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7076689707541531676, guid: 4a6fa81eaaa66874f9c39667b02cb88a,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7076689707541531676, guid: 4a6fa81eaaa66874f9c39667b02cb88a,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7076689707541531676, guid: 4a6fa81eaaa66874f9c39667b02cb88a,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7076689707541531676, guid: 4a6fa81eaaa66874f9c39667b02cb88a,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7076689707541531676, guid: 4a6fa81eaaa66874f9c39667b02cb88a,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7076689707541531676, guid: 4a6fa81eaaa66874f9c39667b02cb88a,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4a6fa81eaaa66874f9c39667b02cb88a, type: 3}
+
 --- !u!1 &150964988
 GameObject:
   m_ObjectHideFlags: 0
@@ -401,7 +332,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Humanos: '
+  m_Text: 
 --- !u!222 &150964991
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -781,6 +712,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 668642508179782337, guid: caca4799f2e892549b77a28c7908b13e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Cruce
+      objectReference: {fileID: 0}
     - target: {fileID: 668642508179782341, guid: caca4799f2e892549b77a28c7908b13e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -849,6 +785,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Suelo01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7076689707541531672, guid: 4a6fa81eaaa66874f9c39667b02cb88a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Camino
       objectReference: {fileID: 0}
     - target: {fileID: 7076689707541531676, guid: 4a6fa81eaaa66874f9c39667b02cb88a,
         type: 3}
@@ -919,6 +860,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Suelo01
       objectReference: {fileID: 0}
+    - target: {fileID: 7076689707541531672, guid: 4a6fa81eaaa66874f9c39667b02cb88a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Camino
+      objectReference: {fileID: 0}
     - target: {fileID: 7076689707541531676, guid: 4a6fa81eaaa66874f9c39667b02cb88a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -987,6 +933,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Suelo01 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7076689707541531672, guid: 4a6fa81eaaa66874f9c39667b02cb88a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Camino
       objectReference: {fileID: 0}
     - target: {fileID: 7076689707541531676, guid: 4a6fa81eaaa66874f9c39667b02cb88a,
         type: 3}
@@ -1203,6 +1154,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Suelo01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7076689707541531672, guid: 4a6fa81eaaa66874f9c39667b02cb88a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Camino
+      objectReference: {fileID: 0}
     - target: {fileID: 7076689707541531676, guid: 4a6fa81eaaa66874f9c39667b02cb88a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1363,6 +1319,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Suelo01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7076689707541531672, guid: 4a6fa81eaaa66874f9c39667b02cb88a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Camino
       objectReference: {fileID: 0}
     - target: {fileID: 7076689707541531676, guid: 4a6fa81eaaa66874f9c39667b02cb88a,
         type: 3}
