@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI; 
+//using UnityEngine.UI; 
 
 
 public class Marcador : MonoBehaviour
@@ -12,10 +12,10 @@ public class Marcador : MonoBehaviour
     public int timerMuerte;
     private int contador;
 
-    private Text texto;
+    //private Text texto;
 
     void Start(){
-        texto= GetComponent<Text>();
+        //texto = GetComponent<Text>();
     }
     // Update is called once per frame
     void Update()
@@ -23,7 +23,7 @@ public class Marcador : MonoBehaviour
         timerMeta--;
         timerMuerte--;
         contador++;
-        hub.
+        //hub.
 
         if(contador == 20)
         {
