@@ -59,10 +59,6 @@ public class movAtlasIgnacio : MonoBehaviour
                 //cosas de los power ups
                 Destroy(delante.transform.gameObject);
             }
-            else if(delante.transform.gameObject.tag == "Daño"){
-                //Restar personas
-                Destroy(gameObject);
-            }
         }
         if(numCamino == 2)
             longitudCanal = 0.5f;
@@ -124,15 +120,8 @@ public class movAtlasIgnacio : MonoBehaviour
             cuerpo.angularVelocity = Vector3.zero;
     }
 
-/*    void OnTriggerEnter(Collider other) 
+    void OnTriggerEnter(Collider other) 
     {
-        if (other.gameObject.name == "triggerRampB")
-        {
-            GM.vertVel = 2;
-        }
-        if (other.gameObject.name == "triggerRampA")
-        {
-            GM.vertVel = 0;
-        }
-    }*/
+        GetComponentInParent<Marcador>().timerMuerte -= 10;
+    }
 }
