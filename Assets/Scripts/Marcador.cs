@@ -2,28 +2,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI; 
+//using UnityEngine.UI; 
 
 
 public class Marcador : MonoBehaviour
 {
     
-    public int timerMeta;
-    public int timerMuerte;
-    private int contador;
+    public float timerMeta;
+    public float timerMuerte;
+    private float contador;
 
-    private Text texto;
+    //private Text texto;
 
     void Start(){
-        texto= GetComponent<Text>();
+       // texto= GetComponent<Text>();
     }
     // Update is called once per frame
     void Update()
     {
-        timerMeta--;
-        timerMuerte--;
-        contador++;
-        hub.
+        
+    }
+    void FixedUpdate()
+    {
+        timerMeta-=0.02f;
+        timerMuerte-=0.02f;
+        contador+=0.02f;
+
 
         if(contador == 20)
         {

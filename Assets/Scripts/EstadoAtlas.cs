@@ -6,15 +6,15 @@ public class EstadoAtlas : MonoBehaviour
 {
     public bool girando = false;
    
-   public float velocidad = 30;
+   public float velocidad = 1;
    public Vector3 Movimiento;
    public CapsuleCollider colisionador;
-   private CharacterController controles;
+   private Rigidbody cuerpo;
     // Start is called before the first frame update
     void Start()
     {
         colisionador= GetComponent<CapsuleCollider>();
-        controles = gameObject.GetComponent<CharacterController>();
+        cuerpo = gameObject.GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -30,8 +30,15 @@ public class EstadoAtlas : MonoBehaviour
         //Hacia delante
         Movimiento = (transform.forward * velocidad);
 
+        //rotar
+        //cuerpo.MoveRotation(new Quaternion(0, 90, 0, 1));
+        //Rotar Derecha
+        cuerpo.angularVelocity = new Vector3(0,Mathf.PI/2,0);
+        //Rotar Izquierda
+        cuerpo.angularVelocity = new Vector3(0,Mathf.PI/2,0);
+
                 //Moverse
-        controles.Move(Movimiento);
+        cuerpo.velocity = new Vector3(transform.forward.x * velocidad, cuerpo.velocity.y, transform.forward.z * velocidad);
     }
         void OnCollisionEnter(Collision col){
         GameObject.Find("Atlas").GetComponent<Marcador>().timerMuerte -= 10;
