@@ -9,7 +9,6 @@ public class movAtlasHugo : MonoBehaviour
     public int numCamino = 2;
     public string bloqueControl = "n";
     public float VelHorizontal = 0;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +35,7 @@ public class movAtlasHugo : MonoBehaviour
             numCamino += 1 ;
             //bloqueControl = "y";
         } 
+        
     }
 
     void OnCollisionEnter(Collision other) 
