@@ -263,7 +263,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerMeta: 100
-  timerMuerte: 500
+  timerMuerte: 200
+  texto: {fileID: 150964990}
 --- !u!1 &150964988
 GameObject:
   m_ObjectHideFlags: 0
@@ -332,7 +333,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Humanos: '
+  m_Text: 
 --- !u!222 &150964991
 CanvasRenderer:
   m_ObjectHideFlags: 0
