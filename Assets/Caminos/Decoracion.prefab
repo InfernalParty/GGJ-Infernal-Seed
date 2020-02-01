@@ -24,7 +24,7 @@ PrefabInstance:
     - target: {fileID: 7076689707541531672, guid: 4a6fa81eaaa66874f9c39667b02cb88a,
         type: 3}
       propertyPath: m_TagString
-      value: Caminos
+      value: Vacio
       objectReference: {fileID: 0}
     - target: {fileID: 7076689707541531673, guid: 4a6fa81eaaa66874f9c39667b02cb88a,
         type: 3}
