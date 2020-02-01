@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &2633279540046834364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668642508179782337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb4540f0c9262a74e9890507faa5392f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &7742265114830911193
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7076689707541531672, guid: 4a6fa81eaaa66874f9c39667b02cb88a,
+        type: 3}
+      propertyPath: m_Name
+      value: Encrucijada
+      objectReference: {fileID: 0}
+    - target: {fileID: 7076689707541531672, guid: 4a6fa81eaaa66874f9c39667b02cb88a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Cruce
+      objectReference: {fileID: 0}
+    - target: {fileID: 7076689707541531676, guid: 4a6fa81eaaa66874f9c39667b02cb88a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7076689707541531676, guid: 4a6fa81eaaa66874f9c39667b02cb88a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7076689707541531676, guid: 4a6fa81eaaa66874f9c39667b02cb88a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7076689707541531676, guid: 4a6fa81eaaa66874f9c39667b02cb88a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7076689707541531676, guid: 4a6fa81eaaa66874f9c39667b02cb88a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7076689707541531676, guid: 4a6fa81eaaa66874f9c39667b02cb88a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7076689707541531676, guid: 4a6fa81eaaa66874f9c39667b02cb88a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7076689707541531676, guid: 4a6fa81eaaa66874f9c39667b02cb88a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7076689707541531676, guid: 4a6fa81eaaa66874f9c39667b02cb88a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7076689707541531676, guid: 4a6fa81eaaa66874f9c39667b02cb88a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7076689707541531676, guid: 4a6fa81eaaa66874f9c39667b02cb88a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4a6fa81eaaa66874f9c39667b02cb88a, type: 3}
+--- !u!1 &668642508179782337 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7076689707541531672, guid: 4a6fa81eaaa66874f9c39667b02cb88a,
+    type: 3}
+  m_PrefabInstance: {fileID: 7742265114830911193}
+  m_PrefabAsset: {fileID: 0}

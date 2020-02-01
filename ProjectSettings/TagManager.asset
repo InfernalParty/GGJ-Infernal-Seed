@@ -5,7 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - "Da\xF1o"
+<<<<<<< HEAD
   - PowerUp
+=======
+  - Caminos
+  - Cruce
+  - Vacio
+>>>>>>> origin/master
   layers:
   - Default
   - TransparentFX
