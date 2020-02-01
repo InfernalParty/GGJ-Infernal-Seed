@@ -106,8 +106,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e116d0f829acf143972a185dd6ae3c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Atlas: {x: 0, y: 0, z: 0}
+  rotacion: 0
   Suelo: {x: 0, y: 0, z: 0}
   velocidad: 5
   camino: {fileID: 7076689707541531672}
-  caminoCreado: 0
+  interseccion: 0
