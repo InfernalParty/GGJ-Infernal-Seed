@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class camMoveHugo : MonoBehaviour
+public class GM : MonoBehaviour
 {
+
+    public static float vertVel = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +15,6 @@ public class camMoveHugo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetComponent<Rigidbody> ().velocity = new Vector3(0,0,4);
+        
     }
 }
