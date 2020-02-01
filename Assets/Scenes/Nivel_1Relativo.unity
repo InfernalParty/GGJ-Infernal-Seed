@@ -11020,7 +11020,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 344234079}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2
@@ -36653,17 +36653,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moverIzq: 97
   moverDer: 100
-  numCamino: 2
-  bloqueControl: n
-  VelHorizontal: 0
-  izq: {fileID: 0}
   velocidad: 4
   distanciaRecogida: 1
   longitudCanal: 1.5
-  moviendoDer: 0
-  moviendoIzq: 0
-  choqueIzq: 0
-  choqueDer: 0
 --- !u!54 &972452026
 Rigidbody:
   m_ObjectHideFlags: 0

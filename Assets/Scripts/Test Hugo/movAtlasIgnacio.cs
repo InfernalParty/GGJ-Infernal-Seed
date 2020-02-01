@@ -6,15 +6,12 @@ public class movAtlasIgnacio : MonoBehaviour
 {
     public KeyCode moverIzq;
     public KeyCode moverDer;
-    public int numCamino = 2;
-    public string bloqueControl = "n";
-    public float VelHorizontal = 0;
+    private int numCamino = 2;
+    private float VelHorizontal = 0;
     private RaycastHit tocado;
     private RaycastHit delante;
     private RaycastHit derecha;
     private RaycastHit izquierda;
-
-    public GameObject izq;
     private int rotar;
     //0 = Recto | 1 = Derecha | 2 = izquierda
     private bool girando;
@@ -24,10 +21,10 @@ public class movAtlasIgnacio : MonoBehaviour
     public float distanciaRecogida = 1;
     public float longitudCanal = 1.5f;
     private int layerMask;
-    public bool moviendoDer;
-    public bool moviendoIzq;
-    public bool choqueIzq;
-    public bool choqueDer;
+    private bool moviendoDer;
+    private bool moviendoIzq;
+    private bool choqueIzq;
+    private bool choqueDer;
 
     // Start is called before the first frame update
     void Start()
@@ -39,27 +36,19 @@ public class movAtlasIgnacio : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         if ((Input.GetKeyDown(moverIzq)) && (numCamino > 1) && (bloqueControl == "n"))
+         if ((Input.GetKeyDown(moverIzq)) && numCamino > 1)
         {
             moviendoIzq = true;
             VelHorizontal = -2;
             //bloqueControl = "y";
         }    
 
-        if ((Input.GetKeyDown(moverDer)) && (numCamino < 3) && (bloqueControl == "n"))
+        if ((Input.GetKeyDown(moverDer)) && numCamino < 3)
         {
             moviendoDer = true;
             VelHorizontal = 2;
             //bloqueControl = "y"
         } 
-        Physics.Raycast(transform.position,transform.forward, out delante,distanciaRecogida);
-        if(delante.transform != null){
-            if(delante.transform.gameObject.tag == "PowerUp")
-            {
-                //cosas de los power ups
-                Destroy(delante.transform.gameObject);
-            }
-        }
         if(numCamino == 2)
             longitudCanal = 0.5f;
         else
@@ -85,7 +74,6 @@ public class movAtlasIgnacio : MonoBehaviour
         }   
         Debug.DrawRay(new Vector3(transform.position.x, transform.position.y-0.35f, transform.position.z),transform.right,Color.red);
         Debug.DrawRay(new Vector3(transform.position.x, transform.position.y-0.35f, transform.position.z),-transform.right,Color.red);
-
     }
 
     void FixedUpdate()
