@@ -15,21 +15,11 @@ public class Marcador : MonoBehaviour
     //private Text texto;
 
     void Start(){
-<<<<<<< HEAD
-        //texto = GetComponent<Text>();
-=======
        // texto= GetComponent<Text>();
->>>>>>> origin/master
     }
     // Update is called once per frame
     void Update()
     {
-<<<<<<< HEAD
-        timerMeta--;
-        timerMuerte--;
-        contador++;
-        //hub.
-=======
         
     }
     void FixedUpdate()
@@ -38,7 +28,6 @@ public class Marcador : MonoBehaviour
         timerMuerte-=0.02f;
         contador+=0.02f;
 
->>>>>>> origin/master
 
         if(contador == 20)
         {
