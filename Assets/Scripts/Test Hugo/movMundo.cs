@@ -20,6 +20,7 @@ public class movMundo : MonoBehaviour
     private bool moviendoIzq;
     private bool choqueIzq;
     private bool choqueDer;
+	private bool heGirado = false;
 
     // Start is called before the first frame update
     void Start()
@@ -58,10 +59,13 @@ public class movMundo : MonoBehaviour
         //Girar
         if(Physics.Raycast(transform.position,Vector3.down, out tocado)){
             if(tocado.transform.gameObject.tag == "Cruce"){
+				heGirado = true;
                 rotar = tocado.transform.gameObject.GetComponent<Encrucijada>().rotacion;
                 if(!girando)
                     contadorGiro = 25;
             }
+			else if(tocado.transform.gameObject.tag != "Cruce")
+				heGirado = false;
         }
         if(contadorGiro > 0){
 			cuerpo.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;

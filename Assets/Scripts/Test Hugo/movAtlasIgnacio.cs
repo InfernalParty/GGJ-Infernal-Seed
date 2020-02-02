@@ -25,6 +25,7 @@ public class movAtlasIgnacio : MonoBehaviour
     private bool moviendoIzq;
     private bool choqueIzq;
     private bool choqueDer;
+    private bool heGirado = false;
 
     // Start is called before the first frame update
     void Start()
@@ -83,14 +84,18 @@ public class movAtlasIgnacio : MonoBehaviour
 
         //Girar
         if(Physics.Raycast(transform.position,Vector3.down, out tocado)){
-            if(tocado.transform.gameObject.tag == "Cruce"){
+            if(tocado.transform.gameObject.tag == "Cruce" && !heGirado){
+                heGirado = true;
                 rotar = tocado.transform.gameObject.GetComponent<Encrucijada>().rotacion;
                 if(!girando)
                     contadorGiro = 50;
             }
+            else if(tocado.transform.gameObject.tag != "Cruce")
+                heGirado = false;
         }
         if(contadorGiro > 0){
-        girando = true;
+            cuerpo.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
+            girando = true;
         switch(rotar){
             case 1:
                 //Rotar Derecha
@@ -102,11 +107,18 @@ public class movAtlasIgnacio : MonoBehaviour
                 cuerpo.angularVelocity = new Vector3(0,-Mathf.PI/2,0);
                 moviendoDer = true;
             break;
+            default:
+                //Recto
+                contadorGiro = 0;
+            break;
             }
             contadorGiro--;
         }
-        else
+        else{
             cuerpo.angularVelocity = Vector3.zero;
+            cuerpo.constraints = RigidbodyConstraints.FreezeRotation;
+            girando = false;
+        }
     }
 
     void OnTriggerEnter(Collider other) 
