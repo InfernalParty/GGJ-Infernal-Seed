@@ -14,10 +14,6 @@ public class Spawner : MonoBehaviour
     [SerializeField]
     private GameObject characterPrefab2;
     [SerializeField]
-    private GameObject characterPrefab3;
-    [SerializeField]
-    private GameObject characterPrefab4;
-    [SerializeField]
     public float tiempoSpawn=5f;
     public float tiempoSiguiente=2;
     public int ObstaculoSeleccionado;
@@ -26,7 +22,7 @@ public class Spawner : MonoBehaviour
     {
         if(Time.time>= tiempoSpawn)
         {
-            ObstaculoSeleccionado = Random.Range(0, 4);
+            ObstaculoSeleccionado = Random.Range(0, 2);
             switch(ObstaculoSeleccionado)
             {  
                 case 0:
@@ -34,12 +30,6 @@ public class Spawner : MonoBehaviour
                     break;
                 case 1:
                     GameObject.Instantiate(characterPrefab2, transform.position, transform.rotation);
-                    break;
-                case 2:
-                    GameObject.Instantiate(characterPrefab3, transform.position, transform.rotation);
-                    break;
-                case 3:
-                    GameObject.Instantiate(characterPrefab4, transform.position, transform.rotation);
                     break;
 
 

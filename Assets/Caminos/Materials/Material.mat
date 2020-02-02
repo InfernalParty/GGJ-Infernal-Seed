@@ -108,7 +108,11 @@ Material:
     - _Color: {r: 0.8, g: 0.8, b: 0.8, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+<<<<<<< HEAD
 --- !u!114 &6306005726564240392
+=======
+--- !u!114 &1365705353113235312
+>>>>>>> origin/master
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
