@@ -94,11 +94,13 @@ public class movAtlasIgnacio : MonoBehaviour
         switch(rotar){
             case 1:
                 //Rotar Derecha
-                cuerpo.angularVelocity = new Vector3(0,Mathf.PI,0);
+                cuerpo.angularVelocity = new Vector3(0,Mathf.PI/2,0);
+                moviendoIzq = true;
             break;
             case 2:
                 //Rotar Izquierda
-                cuerpo.angularVelocity = new Vector3(0,-Mathf.PI,0);
+                cuerpo.angularVelocity = new Vector3(0,-Mathf.PI/2,0);
+                moviendoDer = true;
             break;
             }
             contadorGiro--;
