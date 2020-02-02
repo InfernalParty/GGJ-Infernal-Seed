@@ -111,6 +111,7 @@ public class movAtlasIgnacio : MonoBehaviour
 
     void OnTriggerEnter(Collider other) 
     {
-        GetComponentInParent<Marcador>().timerMuerte -= 10;
+        if(other.tag == "Daño")
+            GetComponentInParent<Marcador>().timerMuerte -= 10;
     }
 }

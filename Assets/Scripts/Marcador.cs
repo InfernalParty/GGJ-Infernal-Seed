@@ -27,20 +27,24 @@ public class Marcador : MonoBehaviour
         contador+=0.02f;
         numPersonas= timerMuerte.ToString();
         texto.text = setText + numPersonas;
+        Debug.Log("Hola");
 
-        if(contador == 20)
+        if(contador >= 20)
         {
             timerMuerte += 10;
             contador = 0;
+            Debug.Log("SumaTiempo");
         }
 
-        if(timerMeta == 0)
+        if(timerMeta <= 0)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            Debug.Log("Victoria");
         }
-        else if( timerMuerte == 0)
+        else if( timerMuerte <= 0)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+            Debug.Log("Derrota");
         }
     }
 }
