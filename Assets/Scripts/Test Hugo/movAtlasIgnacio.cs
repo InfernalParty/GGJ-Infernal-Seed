@@ -15,7 +15,7 @@ public class movAtlasIgnacio : MonoBehaviour
     private int rotar;
     //0 = Recto | 1 = Derecha | 2 = izquierda
     private bool girando;
-    private int contadorGiro;
+    public int contadorGiro;
     private Rigidbody cuerpo;
     public int velocidad = 4;
     public float distanciaRecogida = 1;
