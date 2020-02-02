@@ -59,6 +59,10 @@ public class movAtlasHugo : MonoBehaviour
         {
             GM.vertVel = 0;
         }
+        if (other.gameObject.name == "triggerRotar")
+        {
+            GM.vertVel = 0;
+        }
     }
     IEnumerator pararMov()
     {

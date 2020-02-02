@@ -36511,8 +36511,8 @@ GameObject:
   - component: {fileID: 972452022}
   - component: {fileID: 972452021}
   - component: {fileID: 972452026}
-  - component: {fileID: 972452025}
   - component: {fileID: 972452027}
+  - component: {fileID: 972452025}
   m_Layer: 0
   m_Name: Atlas - Test
   m_TagString: Untagged
@@ -36604,11 +36604,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 972452020}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a09d2dbdcb5a234eb51cfea9fabcc87, type: 3}
+  m_Script: {fileID: 11500000, guid: fb74cb94e46a9db4692d4dbe847cc2cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moverIzq: 97
   moverDer: 100
+  contadorGiro: 0
   velocidad: 4
   distanciaRecogida: 1
   longitudCanal: 1.5
