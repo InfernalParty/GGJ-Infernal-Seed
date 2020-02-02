@@ -79,11 +79,10 @@ public class movAtlasIgnacio : MonoBehaviour
     void FixedUpdate()
     {
         //Mover la bola
-        cuerpo.velocity = transform.right * VelHorizontal + transform.up * GM.vertVel + transform.forward * velocidad;
+        cuerpo.velocity = transform.right * VelHorizontal + Vector3.up*cuerpo.velocity.y + transform.forward * velocidad;
 
         //Girar
-        Physics.Raycast(transform.position,Vector3.down, out tocado);
-        if(tocado.transform.gameObject != null ){
+        if(Physics.Raycast(transform.position,Vector3.down, out tocado)){
             if(tocado.transform.gameObject.tag == "Cruce"){
                 rotar = tocado.transform.gameObject.GetComponent<Encrucijada>().rotacion;
                 if(!girando)
